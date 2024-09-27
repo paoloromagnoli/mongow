@@ -12,7 +12,7 @@ DBNAME=admin
 BUCKET=wizzard-dev-backup-repo-26092024
 
 # Linux user account
-USER=ssm-user
+USER=ec2-user
 
 # Current time
 DATE=`/bin/date +%d-%m-%Y_%H`

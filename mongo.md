@@ -18,12 +18,12 @@ $ mongosh
 
 test> use admin
 
-db.createUser({user: "useradmin" , pwd: "kambusitis25011980", roles: [  "userAdminAnyDatabase","readWriteAnyDatabase" ]})
+db.createUser({user: "useradmin" , pwd: "mypassword", roles: [  "userAdminAnyDatabase","readWriteAnyDatabase" ]})
 
 admin> db.createUser(
   {
     user: "useradmin",
-    pwd: "kambusitis25011980",
+    pwd: "mypassword",
     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
   }
 )
@@ -41,7 +41,7 @@ $ mongosh
 
 test> use admin
 
-admin> db.auth("useradmin", "kambusitis25011980")
+admin> db.auth("useradmin", "mypassword")
 
 # connection string
 mongodb://host:27017/<database>

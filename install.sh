@@ -23,3 +23,10 @@ sudo yum install -y mongodb-org
 # start & enable mongo
 sudo systemctl start mongod
 sudo systemctl enable mongod
+
+# install cronie
+sudo yum install -y cronie
+
+# start & enable cronie
+sudo systemctl start crond
+sudo systemctl enable crond

@@ -1,17 +1,23 @@
+variable "vpc_id" {
+  description = "VPC ID"
+  type        = string
+  default     = "vpc-01c86d7bde63e7098"
+}
+
 variable "subnet_id" {
   description = "VPC Subnet ID"
   type        = string
-  default     = "subnet-0ca9476908a603758"
+  default     = "subnet-0949362bc0190d1df"
 }
 
-variable "security_group_id" {
-  description = "Security Group ID"
+variable "keypair" {
+  description = "Wizzard Key Pair"
   type        = string
-  default     = "sg-0fe8eabc1a66e3926"
+  default     = "wizzard_key"
 }
 
-variable "role_name" {
-  description = "Role ARN"
+variable "s3_arn" {
+  description = "S3 Bucket ARN"
   type        = string
-  default     = "EC2_SSM"
-}
+  default     = "arn:aws:s3:::wizzard-dev-backup-repo-26092024"
+} 
